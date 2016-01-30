@@ -25,6 +25,10 @@ public class Application extends Controller {
         return ok(toJson(persons));
     }
 
+    public Result plainText() {
+        return ok("Hello, World!");
+    }
+
     public Result index() {
         return ok(index.render());
     }
