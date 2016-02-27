@@ -3,14 +3,8 @@
 # ~~~~
 
 # Home page
-#GET     /                           controllers.Application.index()
-
-#POST    /                           controllers.Application.addPerson()
-
-#GET     /persons                    controllers.Application.getPersons
-
+GET     /json                       controllers.Application.json
 GET     /plaintext                  controllers.Application.plainText
-
 GET     /products                   controllers.Products.index(n: Int)
 
 # Map static resources from the /public folder to the /assets URL path
