@@ -1,12 +1,12 @@
 @()
 
 @main("Welcome to Play") {
-    <script type='text/javascript' src='@routes.Assets.versioned("javascripts/index.js")'></script>
+    <script type='text/javascript' src='@routes.Assets.versioned("javascripts/index2.js")'></script>
 
     <ul id="persons"></ul>
 
-    <form method="POST" action="@routes.Application.addPerson()">
+    @*<form method="POST" action="@routes.Application.addPerson()">
         <input type="text" name="name"/>
         <button>Add Person</button>
-    </form>
+    </form>*@
 }

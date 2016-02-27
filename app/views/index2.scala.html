@@ -1,0 +1,15 @@
+@(products: java.util.List[com.mycompany.Product])
+@main2(title = "Product listing", pagename = "Product listing") {
+<table>
+    @for(product <- products) {
+        <tr>
+            <td>@views.html.product(product)</td>
+            <td>
+                @for(category <- product.getCategories) {
+                    @category.getName(),
+                }
+            </td>
+        </tr>
+    }
+</table>
+}

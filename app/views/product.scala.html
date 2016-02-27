@@ -1,0 +1,5 @@
+@(_arg : com.mycompany.Product)
+<div class="product">
+    <img src="(@_arg.getName).jpg" />
+    <span class="productname">@_arg.getName()</span>, <span class="price">$@_arg.getPrice</span>
+</div>
