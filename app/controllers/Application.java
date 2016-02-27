@@ -2,7 +2,7 @@ package controllers;
 
 import play.mvc.Controller;
 import play.mvc.Result;
-import views.html.index;
+//import views.html.index;
 
 public class Application extends Controller {
 
@@ -10,8 +10,8 @@ public class Application extends Controller {
         return ok("Hello, World!");
     }
 
-    public Result index() {
+    /*public Result index() {
         return ok(index.render());
-    }
+    }*/
 
 }
