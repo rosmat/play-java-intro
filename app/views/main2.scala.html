@@ -2,36 +2,40 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xfdohtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/default.css")">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/default.css")">
 
-        <title>@title</title>
-    </head>
+    <title>@title</title>
+</head>
 
-    <body>
-        <div id="maincontainer">
-            <div id="topsection">
-                <div class="innertube"><h1>Company Title .....</h1></div>
+<body>
+<div id="maincontainer">
+    <div id="topsection">
+        <div class="innertube"><h1>Company Title .....</h1></div>
+    </div>
+
+    <div id="contentwrapper">
+        <div id="contentcolumn">
+
+            <!-- Page name needs to be injected -->
+            <div><h2>@pagename</h2></div>
+
+            <div class="innertube">
+
+                @content
+
             </div>
-            <div id="contentwrapper">
-                <div id="contentcolumn">
-
-                        <!-- Page name needs to be injected -->
-                    <div><h2>@pagename</h2></div>
-                    <div class="innertube">
-                    @content
-                    </div>
-                </div>
-            </div>
-
-            <div id="leftcolumn">
-                <div class="innertube">
-                    <h3>Side bar.....</h3>
-                </div>
-            </div>
-
-            <div id="footer">footer.....</div>
         </div>
-    </body>
+    </div>
+
+    <div id="leftcolumn">
+        <div class="innertube">
+            <h3>Side bar.....</h3>
+        </div>
+    </div>
+
+    <div id="footer">footer.....</div>
+</div>
+</body>
 </html>
